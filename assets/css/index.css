@@ -1,0 +1,248 @@
+#navbar {
+  width: 100%;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+  z-index: 10;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 8%;
+}
+
+#logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 16px;
+}
+#logo span {
+  font-weight: 800;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#right-menu {
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#cart-wrapper {
+  position: relative;
+  margin-right: 32px;
+}
+
+#cart-count {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+#cart-wrapper > a {
+  text-decoration: none;
+  color: black;
+}
+
+#cart-wrapper i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#right-menu > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#lblCartCount {
+  font-size: 10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-bottom: 1000px;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #221604;
+}
+.imagePreview {
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+}
+.details {
+  padding: 20px;
+}
+.imageStyle {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  height: 130px;
+  width: 100px;
+}
+.active {
+  border: 2px solid rgb(6, 133, 38);
+}
+.productDetails h1 {
+  font-weight: 300;
+  font-size: 44px;
+  letter-spacing: -2px;
+}
+.productDetails h4 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.buy-button {
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+}
+
+.section-heading {
+  margin-top: 100px;
+  margin-left: 70px;
+  color: rgb(27, 25, 25);
+}
+.card-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4%;
+}
+.card {
+  width: 18%;
+  min-width: 200px;
+  height: auto;
+  margin: 30px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.card a {
+  text-decoration: none;
+  color: #fff;
+}
+.card a:hover {
+  text-decoration: none;
+}
+.card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.card .img img {
+  width: 100%;
+}
+.card .details {
+  padding-left: 10px;
+  margin: 10px auto;
+}
+.card .details h3 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: rgb(27, 25, 25);
+}
+.card .details h4 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+.card .details h5 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #009688;
+}
+
+footer {
+  background-color: black;
+  height: 180px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+footer ul li a,
+footer ul li {
+  text-decoration: none;
+  color: #b8b8b8;
+  font-size: 12px;
+}
+footer ul li a:hover,
+footer ul li:hover {
+  color: #009688;
+}
+footer ul li h3 {
+  text-decoration: none;
+  color: #dcdcdc;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  footer ul {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer ul {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
